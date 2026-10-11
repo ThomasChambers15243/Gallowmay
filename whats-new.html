@@ -26,7 +26,64 @@
 
     <main id="main" class="releases">
       <h1>Releases</h1>
-      <p class="release-meta">Latest release <strong>0.7.14</strong> <time datetime="2026-10-08">8 October 2026</time> · <a href="./#download">Download</a> · <a href="https://github.com/ThomasChambers15243/Reference-Manager/releases">Every version on GitHub</a></p>
+      <p class="release-meta">Latest release <strong>0.7.15</strong> <time datetime="2026-10-11">11 October 2026</time> · <a href="./#download">Download</a> · <a href="https://github.com/ThomasChambers15243/Reference-Manager/releases">Every version on GitHub</a></p>
+<section class="release" id="0-7-15">
+<h2>0.7.15</h2>
+<div class="release-parts">
+<div>
+<h3>Features</h3>
+<ul>
+<li><strong>Windows can be made much narrower.</strong> The smallest a window can be goes from 980×600 to 440×320, so two fit side by side on a laptop: a paper on the right, the notes on the left. In a narrow window the sidebar shows icons only, and widening it lays it over the page until a page is chosen. In a tighter one a page's own sidebar (categories and tags, the list of notes, a project's groups) folds away behind a button and lays over the page when opened. The templates page puts its preview under the template when there is no room beside it. Tabs that do not fit scroll sideways, with the mouse wheel too, keeping the one shown in view.
+</li>
+<li><strong>The middle button opens things in a new tab.</strong> Project cards, a project's PDFs and sketches, a package's project, the projects and PDFs named in the reference form and the notes a search finds join the lists that already did (the sidebar, papers, notes, people, venues, sketches). A middle click on a link in a note does what a click does.
+</li>
+<li><strong>A live view for notes.</strong> Besides writing, reading and the two side by side, a note can be written as it reads: headings, lists, quotes, bold and italic text and code take their look as you type, the marks (<code>#</code>, <code>**</code>, <code>-</code>) showing only on the line you are on; citations show as the references they cite, a task's box is ticked in place and the pictures of marked areas show. Ctrl+click (⌘ on a Mac) opens a link. The same keys work there, @ offers references as before, and <em>From a paper…</em> and <em>Cite…</em> put their text at the caret. The four views are one note: switch between them as you like, and the view is remembered. <em>Live view</em> can be given a key in Settings.
+</li>
+<li><strong>Papers and references share categories and tags.</strong> One set of categories and tags organises the library and the papers, and a paper linked to a reference is wherever its reference is: filing either files both, and a paper not linked to a reference is filed on its own. Settings → <em>Categories and tags</em> separates them again, each side keeping a copy of what there is, and brings them together by name. Updating from an earlier version brings the references' categories and tags together with the papers': a linked paper's own go to its reference, so the reference's other PDFs have them too. The library's <code>category:</code> and <code>tag:</code> filters find a reference by its own categories and tags too.
+</li>
+<li><strong>Projects have papers, as the library does.</strong> Drag a paper from Papers onto a project in the sidebar, or use <em>Add to project…</em> on it or on the papers ticked, to put it in the project; it stays in Papers. A project's page shows its References or its Papers, the latter with the Papers page's sidebar, search and menus: its own papers and its references' PDFs, one put in by hand taken out with a right-click. <em>Add PDFs…</em> there, or PDFs dropped on the window while the project is open, go into the project too. References dragged from the library onto a project in the sidebar are added to it. Project cards count the papers, and <code>project:</code> in the papers' search finds them. A works package made from the project carries its references' PDFs and says how many papers put in by hand it leaves out.
+</li>
+<li><strong>A reference's PDFs are versions, in an order.</strong> A preprint, the published version and a supplement are dragged into the order wanted among the reference form's PDFs, numbered; the first is the one every PDF button opens. The viewer's <em>Version</em> menu goes to the others. Until an order is chosen, the first added comes first.
+</li>
+<li><strong>Delete from a right-click.</strong> A reference in the library or a project (<em>Remove from the project</em> there too), a paper, a category and a tag each have <em>Delete</em> in their right-click menu.
+</li>
+<li><strong>A deleted category leaves what was in it to its parent.</strong> Its papers, references, people or venues go to the category it was in, and so do its sub-categories. Deleting a top-level category with sub-categories asks whether they go too (the choice offered first) or stay as top-level categories, with <em>Don't ask again</em>; Settings → <em>Categories and tags</em> keeps the choice and changes it. Nothing in a category is ever deleted with it.
+</li>
+<li><strong>Any colour for highlights, colour groups and tags.</strong> The colour button offers <em>Another colour…</em>: one of five palettes made to read well as highlights (the eight colours as before, Soft, Vivid, Ocean, Autumn) or any colour at all, typed as <code>#rrggbb</code> or picked. A note's colour is changed the same way, a colour group holds as many colours as wanted (keys 1 to 8 choose the first eight), and a tag takes any colour too. Sketch boards use the same picker.
+</li>
+<li><strong>The library format changes (to 11).</strong> Updating from an earlier version saves a copy of your library in <code>backups\</code> first.
+</li></ul>
+</div>
+<div>
+<h3>Bug fixes</h3>
+<ul>
+<li><strong>A middle click on a link in a note</strong> asked the webview for a window of its own; now it opens the link as a click does.
+</li>
+<li><strong>Ctrl+click on a project in the reference form</strong> opens the project in a new tab behind the form, as the rest of the app does; it did nothing useful before.
+</li>
+<li><strong>Attaching a PDF the library has already</strong> to a reference now links it; it only said the file was in the library.
+</li>
+<li><strong>A project's PDF button with several PDFs</strong> listed them newest first, unlike everywhere else; they follow the reference's order now.
+</li>
+<li><strong>Papers keep their categories and tags</strong> when their reference goes with the works package that held it, as they did when it was deleted by hand.
+</li>
+<li><strong>Links and citations in a note</strong> keep working while the library refreshes; a click in that moment could go nowhere.
+</li>
+<li>***Cite…* and <em>From a paper…</em> after a note's view is switched** put their text at the end until the caret is put somewhere; they put it at the very start of the note.
+</li>
+<li><strong>What is done with ticked papers is done with those shown:</strong> papers ticked before a search, a category or a tag hid them are left alone, as the library does.
+</li>
+<li>**A right-click inside a paper's <em>Categories and tags</em> box** no longer opens the paper's own menu.
+</li>
+<li><strong>A page that fails to draw says so in its tab,</strong> with <em>Try again</em>, and the rest of the window keeps working; the whole window went blank before.
+</li>
+<li><strong>A reference form left open while the reference is deleted elsewhere</strong> says so, rather than staying open to edit.
+</li>
+<li>**Removing a works package with *Delete the PDFs*** keeps the PDFs you filed in a category, tagged or put in another project, as it kept those you highlighted.
+</li></ul>
+</div>
+</div>
+</section>
 <section class="release" id="0-7-14">
 <h2>0.7.14</h2>
 <div class="release-parts">

@@ -1,17 +1,17 @@
 {
-  "version": "0.7.14",
-  "pub_date": "2026-10-08T16:21:27.000Z",
-  "notes": "https://thomaschambers15243.github.io/Reference-Manager/whats-new.html#0-7-14",
+  "version": "0.7.15",
+  "pub_date": "2026-10-11T23:57:56.000Z",
+  "notes": "https://thomaschambers15243.github.io/Reference-Manager/whats-new.html#0-7-15",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/ThomasChambers15243/Reference-Manager/releases/download/v0.7.14/Reference-Manager_0.7.14_x64-setup.exe",
-      "size": 8116538,
-      "sha256": "d621a9a82ef7dab0afa30d33d07a0d725f7319e1153162cac542fe1e449bbaa2"
+      "url": "https://github.com/ThomasChambers15243/Reference-Manager/releases/download/v0.7.15/Reference-Manager_0.7.15_x64-setup.exe",
+      "size": 8326088,
+      "sha256": "ff6675532638e7b459a561d48b20acda3d3f16e58a15878ba607c1f31f67a15b"
     },
     "darwin-universal": {
-      "url": "https://github.com/ThomasChambers15243/Reference-Manager/releases/download/v0.7.14/Reference-Manager_0.7.14_macOS.dmg",
-      "size": 20116555,
-      "sha256": "4fe47f53fa29fcbdc76ac283fdabb67fbaa97bea3750f83451204da8046dc207"
+      "url": "https://github.com/ThomasChambers15243/Reference-Manager/releases/download/v0.7.15/Reference-Manager_0.7.15_macOS.dmg",
+      "size": 20550088,
+      "sha256": "bfbf60cf2e905f20dec1c4145bbb1b81e9b63a898b145b58b3de1d2343e5d7a2"
     }
   }
 }
