@@ -26,7 +26,24 @@
 
     <main id="main" class="releases">
       <h1>Releases</h1>
-      <p class="release-meta">Latest release <strong>0.7.16</strong> <time datetime="2026-10-13">13 October 2026</time> · <a href="./#download">Download</a> · <a href="https://github.com/ThomasChambers15243/Reference-Manager/releases">Every version on GitHub</a></p>
+      <p class="release-meta">Latest release <strong>0.7.17</strong> <time datetime="2026-10-15">15 October 2026</time> · <a href="./#download">Download</a> · <a href="https://github.com/ThomasChambers15243/Reference-Manager/releases">Every version on GitHub</a></p>
+<section class="release" id="0-7-17">
+<h2>0.7.17</h2>
+<div class="release-parts">
+<div>
+<h3>Features</h3>
+<ul>
+<li><strong>Git, an extension.</strong> Your library in a git repository of your own, everything but the PDFs: a history to go back through, and the same library on every computer. Turned on in Settings → <em>Extensions</em>, it sits just above Settings in the sidebar. Give it an empty repository (GitHub, anywhere git is served, or an empty folder on a shared drive) and sign in with a username and token, an SSH key (one you have, or one made for the computer) or nothing; the secret goes into the computer's keychain. Left to itself it pulls when the app starts, commits and pushes a little after changes settle and when the app closes; the page also commits, pushes, pulls, makes and switches branches, merges, goes back to any earlier version, and takes typed git commands (with the git program on the computer, when there is one). When both this computer and the repository changed the library, you choose which to keep; the other waits on a branch. A commit holds the database less what belongs to one computer (linked files, watched folders) and less the text read out of PDFs, the pictures of marked areas, and a readable copy: <code>.bib</code> files, notes as Markdown, highlights as JSON. The git library is built into the app; nothing needs installing.
+</li>
+<li><strong>The PDFs can be kept in another folder.</strong> Settings → <em>Your data</em> → <em>Keep the PDFs in another folder…</em> moves them there and keeps them there from then on: a folder that Google Drive, Dropbox or iCloud syncs holds the same PDFs on every computer, and the Git extension carries everything else. A paper whose PDF is not on this computer says so; adding the same file again links it back to its highlights.
+</li>
+<li><strong>Projects are in the sidebar only while pinned.</strong> The <em>Pin</em> switch on a project's card on the Projects page, or <em>Pin to the sidebar</em> in its menu, puts it in the sidebar, where it opens like a folder as before; off, it leaves. The others are reached from the Projects page, and a project's menu now opens its notes as well as its timeline. No project is pinned to begin with, those from earlier versions included.
+</li>
+<li><strong>The library format changes (to 12).</strong> Updating from an earlier version saves a copy of your library in <code>backups\</code> first.
+</li></ul>
+</div>
+</div>
+</section>
 <section class="release" id="0-7-16">
 <h2>0.7.16</h2>
 <div class="release-parts">
