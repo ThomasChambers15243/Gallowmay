@@ -1,0 +1,130 @@
+{
+  "format": "works-package",
+  "format_version": 1,
+  "id": "example-coding-theory",
+  "name": "Example: error-correcting codes",
+  "publisher": "Gallowmay (an example)",
+  "version": "1.0",
+  "description": "An example of a works package to subscribe to: five papers and a textbook on error-correcting codes, from Hamming's to polar codes, in groups, with categories, tags and two notes. Subscribe to it from the app's Works packages page to see how a package from the web is followed.",
+  "homepage": "https://thomaschambers15243.github.io/Gallowmay/",
+  "licence": "CC0-1.0",
+  "date": "2026-10-19",
+  "groups": [
+    { "name": "Classical codes" },
+    { "name": "Modern codes" }
+  ],
+  "tags": [
+    { "name": "classic", "color": "yellow" },
+    { "name": "capacity-approaching", "color": "green" }
+  ],
+  "references": [
+    {
+      "key": "hamming1950",
+      "type": "article",
+      "fields": {
+        "author": ["Hamming, Richard W."],
+        "title": "Error Detecting and Error Correcting Codes",
+        "journal": "Bell System Technical Journal",
+        "volume": "29",
+        "number": "2",
+        "pages": "147--160",
+        "year": "1950",
+        "doi": "10.1002/j.1538-7305.1950.tb00463.x"
+      },
+      "group": ["Classical codes"],
+      "categories": [["Coding theory", "Block codes"]],
+      "tags": ["classic"]
+    },
+    {
+      "key": "reed1960",
+      "type": "article",
+      "fields": {
+        "author": ["Reed, Irving S.", "Solomon, Gustave"],
+        "title": "Polynomial Codes Over Certain Finite Fields",
+        "journal": "Journal of the Society for Industrial and Applied Mathematics",
+        "volume": "8",
+        "number": "2",
+        "pages": "300--304",
+        "year": "1960",
+        "doi": "10.1137/0108018"
+      },
+      "group": ["Classical codes"],
+      "categories": [["Coding theory", "Block codes"]],
+      "tags": ["classic"]
+    },
+    {
+      "key": "gallager1962",
+      "type": "article",
+      "fields": {
+        "author": ["Gallager, Robert G."],
+        "title": "Low-Density Parity-Check Codes",
+        "journal": "IRE Transactions on Information Theory",
+        "volume": "8",
+        "number": "1",
+        "pages": "21--28",
+        "year": "1962",
+        "doi": "10.1109/TIT.1962.1057683"
+      },
+      "group": ["Modern codes"],
+      "categories": [["Coding theory", "Iterative decoding"]],
+      "tags": ["capacity-approaching"]
+    },
+    {
+      "key": "berrou1993",
+      "type": "inproceedings",
+      "fields": {
+        "author": ["Berrou, Claude", "Glavieux, Alain", "Thitimajshima, Punya"],
+        "title": "Near {S}hannon Limit Error-Correcting Coding and Decoding: {T}urbo-Codes. 1",
+        "booktitle": "Proceedings of ICC '93, IEEE International Conference on Communications",
+        "volume": "2",
+        "pages": "1064--1070",
+        "year": "1993",
+        "doi": "10.1109/ICC.1993.397441"
+      },
+      "group": ["Modern codes"],
+      "categories": [["Coding theory", "Iterative decoding"]],
+      "tags": ["capacity-approaching"]
+    },
+    {
+      "key": "arikan2009",
+      "type": "article",
+      "fields": {
+        "author": ["Arıkan, Erdal"],
+        "title": "Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels",
+        "journal": "IEEE Transactions on Information Theory",
+        "volume": "55",
+        "number": "7",
+        "pages": "3051--3073",
+        "year": "2009",
+        "doi": "10.1109/TIT.2009.2021379"
+      },
+      "group": ["Modern codes"],
+      "categories": [["Coding theory", "Polar codes"]],
+      "tags": ["capacity-approaching"]
+    },
+    {
+      "key": "mackay2003",
+      "type": "book",
+      "fields": {
+        "author": ["MacKay, David J. C."],
+        "title": "Information Theory, Inference, and Learning Algorithms",
+        "publisher": "Cambridge University Press",
+        "address": "Cambridge",
+        "year": "2003",
+        "isbn": "978-0-521-64298-9"
+      },
+      "categories": [["Textbooks"]]
+    }
+  ],
+  "notes": [
+    {
+      "name": "Start here",
+      "text": "# Start here\n\nThis is an example of a works package from the web: a short reading list that the app follows at its address and offers to update when a new version is published.\n\nError-correcting codes begin with [@hamming1950]. Reed and Solomon's codes [@reed1960] are still in every QR code and disc. Gallager's low-density parity-check codes [@gallager1962] waited thirty years, until turbo codes [@berrou1993] showed how close to Shannon's limit a code could come; polar codes [@arikan2009] were the first proved to reach it.\n\nFor a textbook, read [@mackay2003], which is free to read online.\n"
+    },
+    {
+      "folder": ["Reading guides"],
+      "name": "A week of coding theory",
+      "text": "1. Monday: [@hamming1950], and the first chapter of [@mackay2003].\n2. Tuesday: [@reed1960].\n3. Wednesday and Thursday: [@gallager1962], then [@berrou1993].\n4. Friday: [@arikan2009].\n"
+    }
+  ]
+}

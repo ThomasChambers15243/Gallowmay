@@ -1,0 +1,15 @@
+{
+  "format": "works-package-index",
+  "format_version": 1,
+  "packages": [
+    {
+      "name": "Example: error-correcting codes",
+      "publisher": "Gallowmay (an example)",
+      "description": "An example to subscribe to: five papers and a textbook on error-correcting codes, from Hamming's to polar codes, in groups, with categories, tags and two notes.",
+      "address": "https://thomaschambers15243.github.io/Gallowmay/packages/example-coding-theory.json",
+      "version": "1.0",
+      "licence": "CC0-1.0",
+      "homepage": "https://thomaschambers15243.github.io/Gallowmay/"
+    }
+  ]
+}
