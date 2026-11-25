@@ -26,7 +26,70 @@
 
     <main id="main" class="releases">
       <h1>Releases</h1>
-      <p class="release-meta">Latest release <strong>0.8.0</strong> <time datetime="2026-10-22">22 October 2026</time> · <a href="./#download">Download</a> · <a href="https://github.com/ThomasChambers15243/Gallowmay/releases">Every version on GitHub</a></p>
+      <p class="release-meta">Latest release <strong>0.9.0</strong> <time datetime="2026-11-25">25 November 2026</time> · <a href="./#download">Download</a> · <a href="https://github.com/ThomasChambers15243/Gallowmay/releases">Every version on GitHub</a></p>
+<section class="release" id="0-9-0">
+<h2>0.9.0</h2>
+<div class="release-parts">
+<div>
+<h3>Features</h3>
+<ul>
+<li><strong>A paper's details from the Papers list.</strong> A click on a paper shows a panel beside the list with a <em>Paper | Reference</em> switch at its top. <em>Paper</em> is the paper's own details, as the viewer's <em>Details</em> has them: its reading status, label, categories, tags, colour group, notes about the paper, what cites it and its file, all to change without opening the PDF. <em>Reference</em> is its reference's form, as before. A click opens on the side shown last (<em>Paper</em> the first time), and clicking down the list keeps to it. A paper with no reference shows <em>Paper</em>, with <em>Link to a reference…</em>, <em>Type its reference…</em> and <em>Paste its BibTeX…</em> at its top. Right-click a paper for <em>Details…</em>. The viewer's <em>Details</em> can now set the colour group too.
+</li>
+<li><strong>An outline of your own in any PDF.</strong> The viewer's <em>Outline</em> panel shows <em>Your outline</em> above the PDF's own (or alone, for a PDF that has none). Select text and choose <em>Add to the outline</em> (or press A) to make it an entry that leads back to it; with nothing selected, A (or <em>Add a checkpoint here…</em> in the panel) asks for a name and marks the place in view. Entries can be renamed, moved to the place in view, dragged into another order, and nested under the one above (<em>Move in</em>, <em>Move out</em>). A click goes there, and <em>Back</em> returns. Undo takes back a change to the outline as it does a change to the notes. A highlight's note has <em>Add to the outline</em> too, for when the Highlight tool is on. The outline goes with the library, and the Git extension's readable copy holds it.
+</li>
+<li><strong>A look at where a link goes, without going there.</strong> Hovering a link inside a paper (to an appendix, a section, a figure or a table) opens a small viewer at the place it leads to, to scroll through from there. Click in it, or on its pin, and it stays, over the paper, until its ✕ or Escape: move it by its top bar and resize it from its corner, and keep up to four. Text in it can be selected and copied, the paper's highlights show, links in it move it on (with a back arrow), and <em>Go there</em> takes the paper itself there. A click on the link still goes there, and links to the reference list still show the citation's card.
+</li>
+<li><strong>Pictures in notes, from anywhere.</strong> Paste a picture into a note, drop picture files on it, or choose <em>Insert picture…</em> above it; they go where you dropped them or at the caret. Each is kept in the library's own pictures folder (backed up, and synced by the Git extension), as a PNG no more than 2400 pixels on its longest side. Drag a picture's corner, in the live view or on the reading side, to make it narrower or wider: its width is written after it as a share of the text's width, <code>![](picture:…){width=40%}</code>, which documents exported from the note keep. Double-click the corner to give it its whole width back.
+</li>
+<li><strong>Several notes as one document.</strong> <em>Export as one document…</em>, in a folder's menu (its notes, and those in folders inside it, in the tree's order) or above the notes, writes the notes you choose, in the order you drag them into, as one web page, Word or LibreOffice document, PDF, Markdown or plain text file (all but the web page with Pandoc, as for one note). Join them one after another, with a separator you write (in Markdown), or with each starting on a new page; give the document a title, and each note its name as a heading. Citations are formatted together, with one reference list at the end.
+</li>
+<li><strong>Change a marked area without drawing it again.</strong> A box or an ellipse drawn around part of a page has a pencil on its top edge, as a highlight has at its end: drag the area to move it, drag its handles to resize it, or switch it between a box and an ellipse; <em>Done</em> (Enter) takes its picture afresh, and Undo puts the old one back. Freehand lines stay as drawn.
+</li>
+<li><strong>A note as Markdown or plain text.</strong> <em>Export as a document…</em> and <em>Export as one document…</em> write Markdown (<code>.md</code>) and plain text (<code>.txt</code>) too, with Pandoc: citations written out in the style chosen and the reference list at the end. A Markdown file's pictures go in a folder <code>pictures</code> beside it.
+</li>
+<li><strong>Room to write at the top.</strong> In every view of a note the last line can be scrolled up to the top of the page, so what you are writing need not sit at the bottom of the window.
+</li>
+<li><strong>Your citation styles first.</strong> Settings → <em>Exporting references</em> lets you pin citation styles: pinned ones come first, in your order, in every list of styles, and each is a <em>Copy as …</em> of its own in a reference's <em>Export</em> menu. The style lists can be searched, and the star beside a style pins or unpins it from there. Settings also chooses the template a reference's <code>.bib</code> is written with, for <em>Copy BibTeX</em> and the export dialog (a project's references keep the project's template).
+</li>
+<li><strong>From a paper… starts with nothing ticked, and can be searched.</strong> Adding a paper's highlights and notes to a note now starts with none ticked, and a box finds them by their words; <em>Tick all</em> and <em>Untick all</em> take what is shown. In choosing the paper, tick <em>Search highlights and notes too</em> to find a highlight or note in any paper by its words and go straight to it, ticked. Go to anything (Ctrl+P, ⌘P on a Mac) has the same box, opening the paper at the highlight. Settings → <em>Searching</em> chooses whether it starts ticked.
+</li>
+<li><strong>Drag a tab group by its name.</strong> Along the strip, between other groups and tabs (never into one), or out to another window or a new one, with its name, colour and tabs. <em>Move the group to a new window</em> is in its menu.
+</li>
+<li><strong>Tabs go where the line shows.</strong> Dragging a tab, a line shows where it will land, in the colour of the group it will join, or plain if none: on the half of a tab nearer a group's edge it goes just outside the group, so a tab can be put next to a group without joining it. Dropped on a group's name it goes into the group, and on the leading edge of the name just before it. Pinned tabs stay among pinned tabs. Tabs moved to another window keep their names and pinning, and land where they are dropped.
+</li>
+<li><strong>New cards in Markdown, for each sketch.</strong> A Markdown button beside the magnet (and <em>New cards in Markdown</em> in the board's side panel) says whether the cards written on the board from now on are in Markdown; until it is used, the board follows <em>Write notes in Markdown</em> in Settings. Cards keep what they were made with, so the button changes only the cards to come, unless Settings → <em>Sketches</em> says it should change the cards already there too (off to begin with).
+</li>
+<li><strong>Snap to the grid, from the sketch's toolbar.</strong> The magnet beside the side panel's button (or Shift+G) turns snapping on and off for the sketch; it starts off. With it on, new, dropped and pasted items land on the grid too.
+</li>
+<li><strong>Knowledge Bank, an extension: your own definitions, wherever there is text.</strong> Alt+click (⌥-click on a Mac) a word, or words you have selected, in a note, on a paper's pages, in a panel or a list: if you have defined it, its definition shows beside it, to read or change there; if not, a box to define it opens. A defined phrase is found from any word in it. Right-click selected words for <em>Define…</em>, or a marked word for its definition. Defined words have a dotted line under them in notes, notes on papers and a paper's pages (<em>Mark defined words</em> turns it off). The click can be changed in Settings → <em>Keyboard shortcuts</em> (<em>Look up or define</em>, which can have a key too). The extension's page lists every definition, to search, add, change and delete, with how many of your papers each appears in. The definitions go with the library, in backups and with the Git extension. Not in web pages in tabs, the typing trainer, the cite picker's window or scanned pages.
+</li>
+<li><strong>Recap, an extension.</strong> What you did in a day, a week or a month: papers added, opened and finished, highlights with their quotes, references added, notes created and edited, sketches worked on, and your Typing practice, with the period before to compare. Each line opens what it is about, the whole of it copies as Markdown, and each project has one of its own. Opening papers, writing in notes and changing sketches are recorded from this version on (on this computer's library, whether Recap is on or not); the rest goes back as far as your library does.
+</li>
+<li><strong>Settings in groups.</strong> Settings' sections are under five bold headings, <em>General</em>, <em>Library</em>, <em>Papers</em>, <em>Notes and sketches</em> and <em>Your data and the app</em>, on the page and in its contents.
+</li>
+<li><strong>How long a citation's card stays.</strong> Settings → <em>Reading PDFs</em> sets how long a citation's card, or a link's preview, stays once the pointer has left it and what it shows: from 0.1 s to 3 s, 0.3 s (as before) to begin with. Coming back to either in that time keeps it.
+</li>
+<li><strong>Typing practice: your own fingering, and a finger guide.</strong> A new <em>Keyboard</em> tab shows which finger types each key; click a key, then a finger, to change it, and <em>Reset to standard</em> to undo it all. Weak keys groups what you type by your fingering (difficulty stays the same for everyone). Tick <em>finger guide</em> to see the next key's finger as you type. The keyboard marks <code>;</code> as a home key, not <code>'</code>, and a key picked on it lights up again.
+</li></ul>
+</div>
+<div>
+<h3>Bug fixes</h3>
+<ul>
+<li>A citation's card on a paper's page went only once the pointer stopped moving: moving on across the page kept it. It now goes once the pointer has been off it and the citation for the time Settings says (0.3 s, as before, unless changed).
+</li>
+<li>A note with a picture can be made into a PDF with Typst: Typst could not find the picture.
+</li>
+<li>On a Mac, a file dialog (exporting a note as a document, saving a copy, adding PDFs, and the rest) could stop the app for good as it opened.
+</li></ul>
+</div>
+<div>
+<h3>Format</h3>
+<ul>
+<li><strong>Libraries are brought to a new format</strong> (for outlines, Recap's record and Knowledge Bank's definitions) the first time this version opens them, with a copy kept first, as before. Earlier versions of Gallowmay cannot open them afterwards, so update every computer that shares a library through the Git extension.
+</li></ul>
+</div>
+</div>
+</section>
 <section class="release" id="0-8-0">
 <h2>0.8.0</h2>
 <div class="release-parts">
